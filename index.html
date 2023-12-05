@@ -48,7 +48,7 @@
                         <li v-for="(contact, index) in contacts" class="list-group-item d-flex justify-content-between border-0 p-0">
                             <div class="d-flex">
                                 <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
-                                    <img src="./img/avatar_1.jpg" alt="" class="w-100">
+                                    <img :src="contact.avatar" alt="" class="w-100">
                                 </div>
                                 <div>
                                     <p class="fw-bold m-0">{{contact.name}}</p>
@@ -82,7 +82,9 @@
                 </nav>
                 <div>
                     <div>
-                        <div id="chat-container"></div>
+                        <div id="chat-container">
+                            
+                        </div>
                     </div>
                     <div id="chat-input-bar" class="d-flex justify-content-evenly align-items-center">
                         <button class="btn my_option-button"><i class="fa-regular fa-face-smile"></i></button>
