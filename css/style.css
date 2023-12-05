@@ -1,7 +1,13 @@
 #app{
     width: 100vw;
     height: 100vh;
-    background-color: aquamarine;
+    background: linear-gradient(
+        to bottom,
+        #009688 0%,
+        #009688 20%,
+        #DBDBD2 20%,
+        #DBDBD2 100%
+      );
 }
 
 .my_container{
