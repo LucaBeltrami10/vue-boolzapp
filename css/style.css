@@ -68,7 +68,7 @@ main > div{
     background-color: rgb(70, 136, 194);
 }
 
-main > div #chat-container{
+main > div div{
     width: 100%;
     height: 90%;
     background-color: rgb(148, 200, 242);
