@@ -33,7 +33,7 @@
                 </nav>
                 <div>
                     <div id="notification-reminder" class=" d-flex align-items-center">
-                        <div class="rounded-circle my_little-rounded-container overflow-hidden bc-white d-flex align-items-center justify-content-center mx-1 ">
+                        <div class="rounded-circle my_little-rounded-container overflow-hidden bc-white d-flex align-items-center justify-content-center ms-4 me-1 ">
                             <i class="fa-regular fa-bell-slash"></i>
                         </div>
                         <div>
@@ -44,9 +44,20 @@
                     <div id="chat-search">
                         <input placeholder="Cerca o inizia una nuova chat" type="text">
                     </div>
-                    <ul id="recent-chat">
-                        <li>
-                            
+                    <ul id="recent-chat" class="list-group overflow-scroll rounded-0">
+                        <li class="list-group-item d-flex justify-content-between border-0 p-0">
+                            <div class="d-flex">
+                                <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
+                                    <img src="./img/avatar_1.jpg" alt="" class="w-100">
+                                </div>
+                                <div>
+                                    <p class="fw-bold m-0"> Michele</p>
+                                    <p class="m-0"> Ultimo messaggio inviato</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="me-2">12:00</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
