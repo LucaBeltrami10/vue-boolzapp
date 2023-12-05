@@ -45,13 +45,13 @@
                         <input placeholder="Cerca o inizia una nuova chat" type="text">
                     </div>
                     <ul id="recent-chat" class="list-group overflow-scroll rounded-0">
-                        <li class="list-group-item d-flex justify-content-between border-0 p-0">
+                        <li v-for="(contact, index) in contacts" class="list-group-item d-flex justify-content-between border-0 p-0">
                             <div class="d-flex">
                                 <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
                                     <img src="./img/avatar_1.jpg" alt="" class="w-100">
                                 </div>
                                 <div>
-                                    <p class="fw-bold m-0"> Michele</p>
+                                    <p class="fw-bold m-0">{{contact.name}}</p>
                                     <p class="m-0"> Ultimo messaggio inviato</p>
                                 </div>
                             </div>
