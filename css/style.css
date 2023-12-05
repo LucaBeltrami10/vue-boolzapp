@@ -69,6 +69,11 @@ aside > div #chat-search{
     height: 8%;
 }
 
+aside > div #chat-search input{
+    width: calc(100% - 0.5rem);
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem ;
+}
+
 aside > div #recent-chat{
     height: 82%;
     background-color: brown;
