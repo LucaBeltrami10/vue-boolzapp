@@ -1,0 +1,11 @@
+#app{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.my_container{
+    width: calc(100% - 15rem);
+    height: calc(100% - 2.5rem);
+    background-color: brown;
+}
