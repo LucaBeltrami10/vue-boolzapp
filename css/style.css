@@ -48,6 +48,7 @@
 /* colonna di sinistra */
 aside{
     width: 35%;
+    background-color: white;
 }
 
 aside > div{
@@ -58,6 +59,10 @@ aside > div{
 aside > div #notification-reminder{
     height: 10%;
     background-color: #8EDAFC;
+}
+
+aside > div #notification-reminder p{
+    font-size: 0.8rem;
 }
 
 aside > div #chat-search{
