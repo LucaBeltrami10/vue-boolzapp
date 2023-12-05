@@ -34,6 +34,7 @@
     background-color: #EAEAEA;
 }
 
+/* colonna di sinistra */
 aside{
     width: 35%;
 }
@@ -57,6 +58,8 @@ aside > div #recent-chat{
     background-color: brown;
 }
 
+
+/* colonna di destra*/
 main{
     width: 65%;
     background-color: #14443f;
