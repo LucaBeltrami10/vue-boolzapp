@@ -41,6 +41,24 @@
     background-color: #EAEAEA;
 }
 
+.message-sent{
+    align-self: flex-end;
+    background-color: #D5F9BA;
+    padding: 0.4rem 0.25rem 0.4rem 0.5rem;
+    margin: 0.3rem 0 0 0;
+    min-width: 20%;
+    border-radius: 10px;
+}
+
+.message-arrived{
+    align-self: flex-start;
+    background-color: #FFFFFF;
+    padding: 0.4rem 0.25rem 0.4rem 0.5rem;
+    margin: 0.3rem 0 0 0;
+    min-width: 20%;
+    border-radius: 10px;
+}
+
 /* colori */
 
 .bc-white{
@@ -106,10 +124,11 @@ main > div{
     background-color: rgb(70, 136, 194);
 }
 
-main > div  div:first-child{
+main > div  ul{
     width: 100%;
     height: 90%;
     background-image: url(../img/mine.jpg);
+    list-style-type: none;
 }
 
 main > div #chat-input-bar{
