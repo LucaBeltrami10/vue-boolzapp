@@ -29,7 +29,9 @@
 .my_option-button{
     width: 40px;
     height: 40px;
-    background-color: #14443f;
+}
+.my_option-button:hover{
+    background-color: lightgray;
 }
 
 #aside-nav,
@@ -76,7 +78,6 @@ aside > div #chat-search input{
 
 aside > div #recent-chat{
     height: 82%;
-    background-color: brown;
 }
 
 aside ul li:hover{
@@ -104,10 +105,10 @@ main > div{
     background-color: rgb(70, 136, 194);
 }
 
-main > div div{
+main > div  div:first-child{
     width: 100%;
     height: 90%;
-    background-color: rgb(148, 200, 242);
+    background-image: url(../img/mine.jpg);
 }
 
 main > div #chat-input-bar{
