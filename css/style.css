@@ -28,21 +28,37 @@
     background-color: #14443f;
 }
 
+#aside-nav,
+#main-nav{
+    width: 100%;
+    height: 10%;
+    background-color: #EAEAEA;
+}
+
 aside{
     width: 35%;
     background-color: #9be7df;
 }
 
-#aside-nav,
-#main-nav{
-    width: 100%;
-    height: 10%;
-    background-color: aliceblue;
-}
-aside ul{
+aside > div{
     width: 100%;
     height: 90%;
     background-color: yellow;
+}
+
+aside > div #notification-reminder{
+    height: 10%;
+    background-color: #8EDAFC;
+}
+
+aside > div #chat-search{
+    height: 8%;
+    background-color: lightpink;
+}
+
+aside > div #recent-chat{
+    height: 82%;
+    background-color: brown;
 }
 
 main{
