@@ -73,6 +73,7 @@ aside > div #chat-search{
 
 aside > div #chat-search input{
     width: calc(100% - 0.5rem);
+    height: 1.8rem;
     margin: 0.25rem 0.25rem 0.25rem 0.25rem ;
 }
 
@@ -114,5 +115,10 @@ main > div  div:first-child{
 main > div #chat-input-bar{
     width: 100%;
     height: 10%;
-    background-color: rgb(91, 194, 70);
+    background-color: #F3EEEA;
+}
+
+main > div #chat-input-bar input{
+    width: 80%;
+    height: 1.8rem;
 }
