@@ -1,3 +1,4 @@
+
 #app{
     width: 100vw;
     height: 100vh;
@@ -13,5 +14,14 @@
 .my_container{
     width: calc(100% - 15rem);
     height: calc(100% - 2.5rem);
-    background-color: brown;
+}
+
+main{
+    width: 65%;
+    background-color: #14443f;
+}
+
+aside{
+    width: 35%;
+    background-color: #9be7df;
 }
