@@ -167,6 +167,7 @@ createApp({
                 }
             ],
             active : 0,
+            newMessage : '',
         }
     },
 
