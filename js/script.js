@@ -190,6 +190,9 @@ createApp({
                 message: 'ok',
                 status: 'received',
             }
+            setTimeout(function(){
+                console.log('messaggio di risposta')
+            },1000)
 
         }
     }
