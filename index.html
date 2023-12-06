@@ -82,7 +82,7 @@
                 </nav>
                 <div class="">
                     <ul id="chat-container" class="d-flex flex-column m-0 px-5">
-                        <li v-for="(message, index) in contact.messages">{{message.message}}</li>
+                        <li v-for="(messageData, index) in contact.messages" :class="">{{messageData.message}}</li>
                     </ul>
                     <div id="chat-input-bar" class="d-flex justify-content-evenly align-items-center">
                         <button class="btn my_option-button"><i class="fa-regular fa-face-smile"></i></button>
