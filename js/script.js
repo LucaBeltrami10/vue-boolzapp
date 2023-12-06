@@ -168,6 +168,7 @@ createApp({
             ],
             active : 0,
             newMessage : '',
+            searchedUser : '',
         }
     },
 
@@ -187,7 +188,7 @@ createApp({
         autoReply(contact){
             newObject = {
                 date : '',
-                message: 'ok',
+                message: 'Fai come vuoi',
                 status: 'received',
             }
             setTimeout(function() {
