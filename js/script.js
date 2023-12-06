@@ -168,7 +168,7 @@ createApp({
             ],
             active : 0,
             newMessage : '',
-            searchedUser : '',
+            searchedUser : 'none',
         }
     },
 
@@ -194,7 +194,28 @@ createApp({
             setTimeout(function() {
                 contact.messages.push(newObject)
             },1000)
+        },
+        searchedUserNone(){
+            this.searchedUser = 'none'
+        },
+        lettersIncluded(letters){
+            /* 
+            newWord = 'gatto'
+            console.log(newWord);
+            newWord.split('')
+            console.log(newWord);
+            newWordArray = [...newWord]
+            console.log(newWordArray)
+            arrayTto = ['t', 't', 'o'] */
 
-        }
+            arrayTto.forEach(element => {
+                newWordArray.includes(element) ? console.log('true') : console.log('falso');
+            });
+        },
+        /* searchUser(){
+            if(this.searchUser === 'none'){
+                return ""
+            }
+        } */
     }
 }) .mount('#app');
