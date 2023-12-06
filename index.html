@@ -45,7 +45,7 @@
                         <input placeholder="Cerca o inizia una nuova chat" type="text">
                     </div>
                     <ul id="recent-chat" class="list-group overflow-scroll rounded-0">
-                        <li v-for="(contact, index) in contacts" class="list-group-item d-flex justify-content-between border-0 p-0">
+                        <li v-for="(contact, index) in contacts" :class="index == active ? 'bc-lightgray' : ''" class="list-group-item d-flex justify-content-between border-0 p-0">
                             <div class="d-flex">
                                 <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
                                     <img :src="contact.avatar" alt="" class="w-100">
