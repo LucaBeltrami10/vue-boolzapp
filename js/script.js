@@ -171,6 +171,8 @@ createApp({
     },
 
     methods: {
-
+        selectActive(index){
+            return this.active = index
+        }
     }
 }) .mount('#app');
