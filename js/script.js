@@ -175,12 +175,14 @@ createApp({
         selectActive(index){
             return this.active = index
         },
-        addMessage(message){
-            this.contacts.message += {
-                date: new date,
+        addMessage(message, contact){
+            console.log(message)
+            console.log(contact)
+            contact.messages = contact.messages + {
+                date: '',
                 message: message,
                 status: 'send'
             }
-        }
+        },
     }
 }) .mount('#app');
