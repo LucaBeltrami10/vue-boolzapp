@@ -178,11 +178,13 @@ createApp({
         addMessage(message, contact){
             console.log(message)
             console.log(contact)
-            contact.messages = contact.messages + {
-                date: '',
-                message: message,
-                status: 'send'
+            newObject = {
+                date : '',
+                massage: message,
+                status: 'sent',
             }
+            console.log(newObject)
+            contact.me
         },
     }
 }) .mount('#app');
