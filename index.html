@@ -63,7 +63,7 @@
                 </div>
             </aside>
             <!-- colonna di destra -->
-            <main class="d-flex flex-wrap">
+            <main v-for="(contact, index) in contacts" class="d-flex flex-wrap">
                 <nav id="main-nav" class="d-flex justify-content-between">
                     <div class="d-flex align-items-center">
                         <div class="rounded-circle my_rounded-container overflow-hidden m-1">
@@ -80,7 +80,7 @@
                         <button class="btn my_option-button"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                     </div>
                 </nav>
-                <div v-for="(contact, index) in contacts" class="">
+                <div class="">
                     <ul id="chat-container" class="d-flex flex-column m-0 px-5">
                     </ul>
                     <div id="chat-input-bar" class="d-flex justify-content-evenly align-items-center">
