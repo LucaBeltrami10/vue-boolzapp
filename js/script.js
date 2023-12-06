@@ -180,12 +180,13 @@ createApp({
             console.log(contact.messages)
             newObject = {
                 date : '',
-                massage: message,
+                message: message,
                 status: 'sent',
             }
             console.log(newObject)
             contact.messages.push(newObject)
             this.newMessage = '';
+            console.log(contact.messages)
         },
     }
 }) .mount('#app');
