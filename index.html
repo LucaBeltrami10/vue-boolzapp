@@ -63,7 +63,7 @@
                 </div>
             </aside>
             <!-- colonna di destra -->
-            <main v-for="(contact, index) in contacts" class="flex-wrap" >
+            <main v-for="(contact, index) in contacts" :class="index === active ? 'd-flex' : 'd-none'" class="flex-wrap" >
                 <nav id="main-nav" class="d-flex justify-content-between">
                     <div class="d-flex align-items-center">
                         <div class="rounded-circle my_rounded-container overflow-hidden m-1">
