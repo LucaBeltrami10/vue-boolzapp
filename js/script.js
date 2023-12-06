@@ -198,19 +198,16 @@ createApp({
         searchedUserNone(){
             this.searchedUser = 'none'
         },
-        lettersIncluded(letters){
-            /* 
-            newWord = 'gatto'
-            console.log(newWord);
-            newWord.split('')
-            console.log(newWord);
-            newWordArray = [...newWord]
-            console.log(newWordArray)
-            arrayTto = ['t', 't', 'o'] */
-
-            arrayTto.forEach(element => {
-                newWordArray.includes(element) ? console.log('true') : console.log('falso');
+        lettersIncluded(letters, name){
+            lettersEntered = [...letters]
+            nameArray = [...name]
+            
+            lettersEntered.forEach(element => {
+                nameArray.includes(element) ? 'true' : 'false';
             });
+        },
+        userSearched(){
+            /* se è none mostralo, se non è none mostralo solo le le lettere inserite sono incluse nell'array */
         },
         /* searchUser(){
             if(this.searchUser === 'none'){
