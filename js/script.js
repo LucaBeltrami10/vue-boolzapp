@@ -176,17 +176,21 @@ createApp({
             return this.active = index
         },
         addMessage(message, contact){
-            console.log(message)
-            console.log(contact.messages)
             newObject = {
                 date : '',
                 message: message,
                 status: 'sent',
             }
-            console.log(newObject)
             contact.messages.push(newObject)
             this.newMessage = '';
-            console.log(contact.messages)
         },
+        autoReply(){
+            newObject = {
+                date : '',
+                message: 'ok',
+                status: 'received',
+            }
+
+        }
     }
 }) .mount('#app');
