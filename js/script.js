@@ -168,7 +168,7 @@ createApp({
             ],
             active : 0,
             newMessage : '',
-            searchedUser : 'none',
+            searchedUser : '',
         }
     },
 
@@ -198,16 +198,35 @@ createApp({
         searchedUserNone(){
             this.searchedUser = 'none'
         },
-        lettersIncluded(letters, name){
+        /* lettersIncluded(letters, name){
             lettersEntered = [...letters]
             nameArray = [...name]
             
             lettersEntered.forEach(element => {
-                nameArray.includes(element) ? 'true' : 'false';
+                nameArray.includes(element) ? '' : 'd-none';
             });
+        }, */
+        lettersIncluded(name){
+            searchedUserArray = [...this.searchedUser]
+            nameArray = [...name]
+            console.log(searchedUserArray)
+            console.log(nameArray)
+            
+            if(this.searchedUser === ''){
+                return true;
+            }else{
+                searchedUserArray.forEach((element) => {
+                    console.log(nameArray.includes(element) ? true : false)
+                    return nameArray.includes(element) ? true : false;
+                });
+            }
         },
         userSearched(){
+            /* FUNZIONE ATTIVA DAL CARICAMENTI DATI JS */
             /* se è none mostralo, se non è none mostralo solo le le lettere inserite sono incluse nell'array */
+            if( this.searchedUser === 'none'){
+                return ''
+            }
         },
         /* searchUser(){
             if(this.searchUser === 'none'){
