@@ -67,10 +67,10 @@
                 <nav id="main-nav" class="d-flex justify-content-between">
                     <div class="d-flex align-items-center">
                         <div class="rounded-circle my_rounded-container overflow-hidden m-1">
-                            <img src="./img/avatar_2.jpg" alt="user image" class=" w-100">
+                            <img :src="contact.avatar" alt="user image" class=" w-100">
                         </div>
                         <div>
-                            <p id="user-name" class="m-0 fw-bold">Matteo</p>
+                            <p id="user-name" class="m-0 fw-bold">{{contact.name}}</p>
                             <p class="m-0">ultimo accesso</p>
                         </div>
                     </div>
