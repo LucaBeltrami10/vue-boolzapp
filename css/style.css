@@ -59,6 +59,15 @@
     border-radius: 10px;
 }
 
+/* impostazioni testo */
+.my_fs-07{
+    font-size: 0.7rem;
+}
+
+.my_fs-08{
+    font-size: 0.8rem;
+}
+
 /* colori */
 
 .bc-white{
