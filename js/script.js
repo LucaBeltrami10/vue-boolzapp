@@ -184,14 +184,14 @@ createApp({
             contact.messages.push(newObject)
             this.newMessage = '';
         },
-        autoReply(){
+        autoReply(contact){
             newObject = {
                 date : '',
                 message: 'ok',
                 status: 'received',
             }
-            setTimeout(() => {
-                console.log(this)
+            setTimeout(function() {
+                contact.messages.push(newObject)
             },1000)
 
         }
