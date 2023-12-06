@@ -167,9 +167,6 @@ createApp({
                 }
             ],
             active : 0,
-            
-            
-
         }
     },
 

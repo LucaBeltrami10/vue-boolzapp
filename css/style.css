@@ -77,12 +77,12 @@ aside > div{
 }
 
 aside > div #notification-reminder{
-    height: 10%;
+    height: 12%;
     background-color: #8EDAFC;
 }
 
 aside > div #notification-reminder p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 aside > div #chat-search{
@@ -96,7 +96,7 @@ aside > div #chat-search input{
 }
 
 aside > div #recent-chat{
-    height: 82%;
+    height: 80%;
 }
 
 aside ul li:hover{
@@ -116,6 +116,10 @@ aside ul li p:last-child{
 main{
     width: 65%;
     background-color: #14443f;
+}
+
+main nav div:last-child p:last-child{
+    font-size: 0.7rem;
 }
 
 main > div{
