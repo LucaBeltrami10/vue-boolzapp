@@ -175,5 +175,12 @@ createApp({
         selectActive(index){
             return this.active = index
         },
+        addMessage(message){
+            this.contacts.message += {
+                date: new date,
+                message: message,
+                status: 'send'
+            }
+        }
     }
 }) .mount('#app');
