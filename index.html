@@ -45,7 +45,7 @@
                         <input v-model="searchedUser" placeholder="Cerca o inizia una nuova chat" type="text">
                     </div>
                     <ul id="recent-chat" class="list-group overflow-scroll rounded-0">
-                        <li v-for="(contact, index) in contacts" @click="selectActive(index)" :class="index == active ? 'bc-lightgray' : ''" v-show="lettersIncluded(contact.name)"  class="list-group-item d-flex justify-content-between border-0 p-0">
+                        <li v-for="(contact, index) in contacts" @click="selectActive(index)" :class="index == active ? 'bc-lightgray' : '', " class="list-group-item d-flex justify-content-between border-0 p-0">
                             <div class="d-flex">
                                 <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
                                     <img :src="contact.avatar" alt="" class="w-100">
@@ -82,11 +82,11 @@
                 </nav>
                 <div class="">
                     <ul id="chat-container" class="d-flex flex-column overflow-scroll m-0 px-5">
-                        <li v-for="(messageData, indexMessage) in contact.messages" :class="messageData.status === 'sent' ? 'message-sent': 'message-received'">{{messageData.message}}</li>
+                        <li v-for="(messageData, indexMessage) in contact.messages" :class="messageData.status === 'sent' ? 'message-sent': 'message-received', showSearched(contact.name)">{{messageData.message}}</li>
                     </ul>
                     <div id="chat-input-bar" class="d-flex justify-content-evenly align-items-center">
                         <button class="btn my_option-button"><i class="fa-regular fa-face-smile"></i></button>
-                        <input v-model="newMessage" @keyup.enter="addMessage(newMessage, contact), autoReply(contact), lettersIncluded(newMessage)" type="text" placeholder="Scrivi un messaggio">
+                        <input v-model="newMessage" @keyup.enter="addMessage(newMessage, contact), autoReply(contact)" type="text" placeholder="Scrivi un messaggio">
                         <button class="btn my_option-button"><i class="fa-solid fa-microphone"></i></button>
                     </div>
                 </div>

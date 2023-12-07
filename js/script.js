@@ -198,40 +198,22 @@ createApp({
         searchedUserNone(){
             this.searchedUser = 'none'
         },
-        /* lettersIncluded(letters, name){
-            lettersEntered = [...letters]
-            nameArray = [...name]
-            
-            lettersEntered.forEach(element => {
-                nameArray.includes(element) ? '' : 'd-none';
-            });
-        }, */
-        lettersIncluded(name){
+        
+       showSearched(name){
+            name = name.toLowerCase()
             searchedUserArray = [...this.searchedUser]
             nameArray = [...name]
-            console.log(searchedUserArray)
-            console.log(nameArray)
-            
-            if(this.searchedUser === ''){
-                return true;
-            }else{
-                searchedUserArray.forEach((element) => {
-                    console.log(nameArray.includes(element) ? true : false)
-                    return nameArray.includes(element) ? true : false;
-                });
-            }
-        },
-        userSearched(){
-            /* FUNZIONE ATTIVA DAL CARICAMENTI DATI JS */
-            /* se è none mostralo, se non è none mostralo solo le le lettere inserite sono incluse nell'array */
-            if( this.searchedUser === 'none'){
-                return ''
-            }
-        },
-        /* searchUser(){
-            if(this.searchUser === 'none'){
-                return ""
-            }
-        } */
+            allIncludes = [];
+
+            searchedUserArray.forEach((element) => {
+                nameArray.includes(element) ? allIncludes.push(true) : allIncludes.push(false);
+            });
+
+            console.log(allIncludes)
+
+            console.log(`${name} ${allIncludes.includes(false) ? 'd-none' : ''}`)
+            return allIncludes.includes(false) ? 'd-none' : '';
+       },
+        
     }
 }) .mount('#app');
