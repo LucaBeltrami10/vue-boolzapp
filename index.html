@@ -81,9 +81,9 @@
                     </div>
                 </nav>
                 <div class="">
-                    <ul id="chat-container" class="d-flex flex-column overflow-scroll m-0 px-5">
-                        <li v-for="(messageData, indexMessage) in contact.messages" :class="messageData.status === 'sent' ? 'message-sent': 'message-received', ">{{messageData.message}}</li>
-                    </ul>
+                    <div id="chat-container" class="d-flex flex-column overflow-scroll m-0 px-5">
+                        <article v-for="(messageData, indexMessage) in contact.messages" :class="messageData.status === 'sent' ? 'message-sent': 'message-received', ">{{messageData.message}}</article>
+                    </div>
                     <div id="chat-input-bar" class="d-flex justify-content-evenly align-items-center">
                         <button class="btn my_option-button"><i class="fa-regular fa-face-smile"></i></button>
                         <input v-model="newMessage" @keyup.enter="addMessage(newMessage, contact), autoReply(contact)" type="text" placeholder="Scrivi un messaggio">
@@ -94,6 +94,7 @@
         </div>
     </div>
 
+    <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1/dist/es-module-shims.min.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
