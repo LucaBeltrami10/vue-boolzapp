@@ -208,10 +208,7 @@ createApp({
             searchedUserArray.forEach((element) => {
                 nameArray.includes(element) ? allIncludes.push(true) : allIncludes.push(false);
             });
-
-            console.log(allIncludes)
-
-            console.log(`${name} ${allIncludes.includes(false) ? 'd-none' : ''}`)
+            
             return allIncludes.includes(false) ? 'd-none' : '';
        },
         
