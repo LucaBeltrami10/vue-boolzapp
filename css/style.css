@@ -134,6 +134,10 @@ main > div  #chat-container{
     list-style-type: none;
 }
 
+.my_btn-dropdown i{
+    font-size: 0.6rem;
+}
+
 main > div #chat-input-bar{
     width: 100%;
     height: 10%;
@@ -144,3 +148,7 @@ main > div #chat-input-bar input{
     width: 80%;
     height: 1.8rem;
 }
+
+.dropdown-toggle::after {
+    display: none;
+  }
