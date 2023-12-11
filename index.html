@@ -88,7 +88,7 @@
                                 <button class="btn my_btn-dropdown dropdown-toggle ms-2 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-angle-down"></i></button>
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="#">Message Info</a></li>
-                                  <li><a class="dropdown-item" href="#">Delete message</a></li>
+                                  <li @click="deleteIdexItemFromArray(contact.messages, indexMessage)"><a class="dropdown-item" href="#">Delete message</a></li>
                                 </ul>
                               </div>
                         </article>
