@@ -211,6 +211,9 @@ createApp({
             
             return allIncludes.includes(false) ? 'd-none' : '';
        },
+       deleteIdexItemFromArray(array, index){
+        array.splice(index, 1)
+       },
         
     }
 }) .mount('#app');
