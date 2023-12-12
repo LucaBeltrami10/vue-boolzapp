@@ -46,14 +46,14 @@
                         <input v-model="searchedUser" placeholder="Cerca o inizia una nuova chat" type="text">
                     </div>
                     <ul id="recent-chat" class="list-group overflow-scroll rounded-0">
-                        <li v-for="(contact, index) in contacts" @click="selectActive(index)" :class="index == active ? 'bc-lightgray' : '', showSearched(contact.name)" class="list-group-item d-flex justify-content-between border-0 p-0">
+                        <!-- <li v-for="(contact, index) in getContacts()" @click="selectActive(index) -->" :class="index == active ? 'bc-lightgray' : '', showSearched(contact.name)" class="list-group-item d-flex justify-content-between border-0 p-0">
                             <div class="d-flex">
                                 <div class="rounded-circle my_rounded-container overflow-hidden my-1 ms-4 me-1">
                                     <img :src="contact.avatar" alt="" class="w-100">
                                 </div>
                                 <div>
                                     <p class="fw-semibold my_fs-08 m-0">{{contact.name}}</p>
-                                    <p class="m-0 my_fs-07"></p>
+                                    <p v-for="(messageData, indexMessage) in contact.messages" class="m-0 my_fs-07">{{showLastMessage(messageData, indexMessage, contact.messages)}}</p>
                                 </div>
                             </div>
                             <div>

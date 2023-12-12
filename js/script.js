@@ -185,7 +185,7 @@ createApp({
             contact.messages.push(newObject)
             this.newMessage = '';
         },
-        autoReply(contact){
+        /* autoReply(contact){
             newObject = {
                 date : '',
                 message: 'Fai come vuoi',
@@ -194,10 +194,22 @@ createApp({
             setTimeout(function() {
                 contact.messages.push(newObject)
             },1000)
-        },
+        }, */
         searchedUserNone(){
             this.searchedUser = 'none'
         },
+
+        getContacts() {
+            
+            if(empty(this.searchedUser)) {
+
+                this.contact.filter( (e,i) => {
+                    return e.name === this.searchedUser
+                } )
+            }
+
+            return this.contacts;
+        }, 
         
        showSearched(name){
             name = name.toLowerCase()
@@ -213,6 +225,16 @@ createApp({
        },
        deleteIdexItemFromArray(array, index){
         array.splice(index, 1)
+       },
+       showLastMessage(messageData, indexMessage, arrayMessages){
+        lenght = arrayMessages.length - 1
+
+        if(indexMessage == length){
+            return messageData.message
+        }
+        console.log(` ${indexMessage} ${messageData.message}`)
+        console.log(messageData.length)
+        console.log(arrayMessages.length)
        },
         
     }
